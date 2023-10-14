@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          default-label: config-server
-          uri: https://github.com/jmuletpol/microservices-skeleton.git
+          default-label: master
+          uri: https://github.com/jmulet/microservices-skeleton.git
           search-paths: config-data
   application:
     name: config-service

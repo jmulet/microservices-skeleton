@@ -12,5 +12,7 @@ Always boot services in this order
 
 See registered instances at Eureka Server: http://localhost:8761/
 
+Routes from gateway with actuator
+/actuator/gateway/globalfilters
 
 

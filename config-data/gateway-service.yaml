@@ -27,6 +27,6 @@ spring:
           enabled: true
       routes:
         - id: user-service
-          uri: lb://user-service/user
+          uri: http://localhost:8001/
           predicates:
             - Path=/user/**

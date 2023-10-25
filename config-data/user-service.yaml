@@ -2,6 +2,8 @@ server:
   port: 8001
 eureka:
   client:
+    registration:
+      preferIpAddress: true
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:

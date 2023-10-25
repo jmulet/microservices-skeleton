@@ -1,7 +1,10 @@
 server:
   port: 8761
+
 eureka:
   client:
+    registration:
+      preferIpAddress: true
     fetchRegistry: false
     registerWithEureka: false
     serviceUrl:

@@ -1,8 +1,11 @@
 server:
   port: 8080
 
+
 eureka:
   client:
+    registration:
+      preferIpAddress: true
     fetch-registry: true
     register-with-eureka: true
     service-url:
@@ -26,6 +29,7 @@ spring:
         use404: true
       discovery:
         locator:
+          lowerCaseServiceId: true
           enabled: true
       routes:
         - id: user-service

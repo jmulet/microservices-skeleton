@@ -22,11 +22,14 @@ management:
 spring:
   cloud:
     gateway:
+      loadbalancer:
+        use404: true
       discovery:
         locator:
           enabled: true
       routes:
         - id: user-service
-          uri: lb://USER-SERVICE
+          uri: lb://user-service
           predicates:
             - Path=/user/**
+            - Header=X-Powered-By, Spring Cloud Gateway
